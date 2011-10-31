@@ -3,5 +3,6 @@ cp ~/_rcs/_sample_bashrc ~/.bashrc
 cp ~/_rcs/_sample_vimrc ~/.vimrc
 
 OR, for cygwin
+git clone http://github.com/geecu/rcs.git ~/_rcs
 cp ~/_rcs/_sample_bashrc ~/_bashrc
 cp ~/_rcs/_sample_vimrc ~/_vimrc
