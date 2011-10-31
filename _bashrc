@@ -1,7 +1,17 @@
 alias resource="source ~/_rcs/_sf"
 alias reprofile="vim ~/_rcs/_bashrc; source ~/_rcs/_bashrc; resource"
 
+alias rerc="cd ~/_rcs; gpl; source ~/_rcs/_bashrc; resource"
+
 resource
+
+alias fixpermissions="chmod a+w ~/.viminfo"
+
+alias v="ls -la"
+
+alias big="du -d 1 -h -x | egrep '[0-9]M|[0-9]G' | sort -nr"
+alias qsort="du -sh * | sort -nr"
+alias qq="big"
 
 alias gs="git status"
 alias gsu="git submodule"
@@ -21,8 +31,4 @@ alias ggc="git gc"
 alias gcm="git checkout master"
 alias gr="git remote -v"
 alias gt="git tag"
-
-alias fixpermissions="chmod a+w ~/.viminfo"
-
-alias v="ls -la"
 
