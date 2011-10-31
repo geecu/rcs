@@ -1,0 +1,63 @@
+source ~/_rcs/_bashrc
+
+alias wweb="cd /cygdrive/c/wamp/www"
+
+alias cdlogs="cd /cygdrive/c/wamp/logs"
+alias cdiislogs="cd /cygdrive/c/Windows/temp"
+alias cdapache="cd /cygdrive/c/Apache2/"
+alias cdapplications="cd /cygdrive/c/Users/gk/Applications/"
+alias cdsolr="cd /cygdrive/c/Users/gk/Applications/solr"
+alias cdphonegapandroid="cd /cygdrive/c/Users/gk/Applications/phonegap-android/"
+
+alias wwebcoaching="cd /cygdrive/c/wamp/www/coaching"
+alias wwebic="cd /cygdrive/c/wamp/www/ics"
+alias wwebic="cd /cygdrive/c/wamp/www/gkicr"
+alias wwebtb="cd /cygdrive/c/wamp/www/tb"
+alias wwebahex="cd /cygdrive/c/wamp/www/ah-ex"
+alias wwebahcoduri="cd /cygdrive/c/wamp/www/ah-coduri"
+alias wwebahcross="cd /cygdrive/c/wamp/www/ah-cross"
+alias wwebskimmer="cd /cygdrive/c/wamp/www/skimmer"
+alias wwebskimmerah="cd /cygdrive/c/wamp/www/skimmer/lib/vendor/ah"
+alias wwebsamsung="cd /cygdrive/c/wamp/www/samsung"
+alias wwebsamsungah="cd /cygdrive/c/wamp/www/samsung/lib/vendor/ah"
+alias wwebahweb="cd /cygdrive/c/wamp/www/ah-web"
+alias wwebahtrk="cd /cygdrive/c/wamp/www/ah-trk"
+alias wwebahuser="cd /cygdrive/c/wamp/www/ah-user"
+alias wwebadevarul="cd /cygdrive/c/wamp/www/adevarul"
+alias wwebmd="cd /cygdrive/c/wamp/www/md"
+alias wwebsf="cd /cygdrive/c/wamp/www/sf"
+alias wwebsfgk="cd /cygdrive/c/wamp/www/sf/vendor/bundles/Gk"
+alias wwebsolr="cd /cygdrive/c/wamp/www/solr"
+alias wwebgls="cd /cygdrive/c/wamp/www/gls"
+alias wwebglsacademy="cd /cygdrive/c/wamp/www/glsacademy"
+alias wwebtransform="cd /cygdrive/c/wamp/www/transform"
+alias wwebtransformgk="cd /cygdrive/c/wamp/www/transform/vendor/bundles/Gk"
+alias wwebdoctrinesandbox="cd /cygdrive/c/wamp/www/doctrine/tools/sandbox"
+
+alias tiiostransform="cd ~/titanium/iostransform"
+alias titransform="cd ~/titanium/transform"
+alias tikitchen="cd ~/titanium/KitchenSink"
+
+alias sshicr="ssh -l domain1971823 ssh.icr-london.co.uk"
+
+alias cdmahout="cd /cygdrive/c/Users/gk/installs/mahout"
+
+alias mvnopts="export MAVEN_OPTS=\"-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n\""
+alias mvnruntasteweb="cd ~/installs/mahout/taste-web; cp ../examples/target/grouplens.jar lib/; mvn package; mvn jetty:run-war"
+alias mvnruntasteweb="cd ~/installs/mahout/taste-web; mvn package; mvn -X jetty:run-war"
+alias mvnruntastewebnodebug="cd ~/installs/mahout/taste-web; mvn package; mvn jetty:run-war"
+
+export ANT_HOME=/cygdrive/c/Users/gk/Applications/apache-ant-1.8.2
+export ANDROID_HOME=/cygdrive/c/Users/gk/Applications/android
+export PHONEGAP_ANDROID_HOME=/cygdrive/c/Users/gk/Applications/phonegap-android
+
+export NODE_MODULES=/cygdrive/c/Users/gk/Applications/ryppi/node_modules
+export STYLUS_HOME=$NODE_MODULES/stylus
+
+export NODE_PATH=$NODE_MODULES
+
+export PATH=$PATH:$ANT_HOME/bin:$ANDROID_HOME/tools:$PHONEGAP_ANDROID_HOME/bin:$STYLUS_HOME/bin
+
+alias yui="java -jar C:/Users/gk/Applications/java/yuicompressor-2.4.6/build/yuicompressor-2.4.6.jar"
+alias rjs="node /cygdrive/c/Users/gk/Applications/r.js/r.js"
+alias tailphp="tail -f /cygdrive/c/Windows/Temp/php-errors.log"
