@@ -1,0 +1,28 @@
+alias resource="source ~/_rcs/_sf"
+alias reprofile="vim ~/_rcs/_bashrc; source ~/_rcs/_bashrc; resource"
+
+resource
+
+alias gs="git status"
+alias gsu="git submodule"
+alias gsuu="git submodule update"
+alias ga="git add"
+alias gb="git branch"
+alias gp="git push"
+alias gpl="git pull"
+alias gl="git log"
+alias gd="git diff"
+alias gsh="git show"
+alias gm="git commit -a -m"
+alias gcl="git clone"
+alias gi="git clone --bare --no-hardlinks"
+alias gc="git checkout"
+alias ggc="git gc"
+alias gcm="git checkout master"
+alias gr="git remote -v"
+alias gt="git tag"
+
+alias fixpermissions="chmod a+w ~/.viminfo"
+
+alias v="ls -la"
+
