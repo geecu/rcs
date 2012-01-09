@@ -1,3 +1,4 @@
+alias sf="./app/console"
 alias sfschema_rebuild="echo dropping; php app/console doctrine:schema:drop --force; echo creating; php app/console doctrine:schema:create; echo loading; php app/console doctrine:fixtures:load"
 alias sfschema_rebuildno_data="php app/console doctrine:schema:drop --force; php app/console doctrine:schema:create"
 alias sfdata_load="php app/console doctrine:fixtures:load"
