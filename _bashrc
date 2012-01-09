@@ -3,8 +3,6 @@ alias reprofile="vim ~/_rcs/_bashrc; source ~/_rcs/_bashrc; resource"
 
 alias rerc="cd ~/_rcs; gpl; source ~/_rcs/_bashrc; resource"
 
-resource
-
 alias fixpermissions="chmod a+w ~/.viminfo"
 
 alias v="ls -la"
