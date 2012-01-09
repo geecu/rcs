@@ -6,9 +6,9 @@ filetype plugin on
 set nocompatible
 
 set nohls       " NO hilght search
-set tabstop=2
+set tabstop=4
 set et
-set sw=2
+set sw=4
 set smarttab
 set ruler
 set fenc=utf-8
