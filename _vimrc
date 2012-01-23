@@ -70,6 +70,8 @@ endfunction
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 
+au BufNewFile,BufRead *.scss set filetype=css
+
 " run file with PHP CLI (CTRL-M)
 :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 " PHP parser check (CTRL-L)
