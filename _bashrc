@@ -30,3 +30,7 @@ alias gcm="git checkout master"
 alias gr="git remote -v"
 alias gt="git tag"
 
+function wgrep() {
+    find ./ -iregex .+\.php$ -type f -print | xargs grep "$@" ;
+}
+
