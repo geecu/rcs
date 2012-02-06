@@ -1,3 +1,3 @@
 source ~/_rcs/_bashrc
 
-alias wweb="cd _path_to_www_"
+export WWEB_DIR=""
