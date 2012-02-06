@@ -34,3 +34,32 @@ function wgrep() {
     find ./ -iregex .+\.php$ -type f -print | xargs grep "$@" ;
 }
 
+function wweb() {
+    if [ -z "${WWEB_DIR}" ]; then
+        _wweb_not_set_warning
+        return 1
+    fi
+
+    cd ${WWEB_DIR}/$@
+}
+
+function _wweb_completion {
+    if [ -z "${WWEB_DIR}" ]; then
+        _wweb_not_set_warning
+        return 1
+    fi
+
+    local cur prev names
+    COMPREPLY=()
+
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    names=$(for x in `ls -1 ${WWEB_DIR}`; do echo ${x/\/etc\/xen\//} ; done )
+
+    COMPREPLY=( $(compgen -W "${names}" -- ${cur} ) )
+    return 0
+}
+function _wweb_not_set_warning {
+    echo WWEB_DIR env variable is not set!!! Add export WWEB_DIR=/path_to_your_root_www_dir to bashrc
+}
+complete -F _wweb_completion wweb
