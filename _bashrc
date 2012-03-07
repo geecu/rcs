@@ -63,3 +63,6 @@ function _wweb_not_set_warning {
     echo WWEB_DIR env variable is not set!!! Add export WWEB_DIR=/path_to_your_root_www_dir to bashrc
 }
 complete -F _wweb_completion wweb
+
+#thanks to http://www.earthinfo.org/linux-disk-usage-sorted-by-size-and-human-readable/
+alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\' 
