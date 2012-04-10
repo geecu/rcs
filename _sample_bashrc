@@ -1,3 +1,4 @@
 source ~/_rcs/_bashrc
 
 export WWEB_DIR=""
+export SF_ENV=local

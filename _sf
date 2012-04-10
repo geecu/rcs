@@ -1,4 +1,3 @@
-export SF_ENV=local
 alias sf="./app/console --env=$SF_ENV"
 alias sfschema_rebuild="echo dropping; php app/console --env=$SF_ENV doctrine:schema:drop --force; echo creating; php app/console --env=$SF_ENV doctrine:schema:create; echo loading; php app/console --env=$SF_ENV doctrine:fixtures:load"
 alias sfschema_rebuildno_data="php app/console --env=$SF_ENV doctrine:schema:drop --force; php app/console --env=$SF_ENV doctrine:schema:create"
