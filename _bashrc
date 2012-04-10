@@ -1,7 +1,7 @@
-alias resource="source ~/_rcs/_sf"
-alias reprofile="vim ~/_rcs/_bashrc; source ~/_rcs/_bashrc; resource"
+alias resource="source ~/.rcs/_sf"
+alias reprofile="vim ~/.rcs/_bashrc; source ~/.rcs/_bashrc; resource"
 
-alias rerc="cd ~/_rcs; gpl; source ~/_rcs/_bashrc; resource"
+alias rerc="cd ~/.rcs; gpl; source ~/.rcs/_bashrc; resource"
 
 alias fixpermissions="chmod a+w ~/.viminfo"
 
