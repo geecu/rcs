@@ -1,5 +1,6 @@
 alias resource="source ~/.rcs/_sf"
 alias reprofile="vim ~/.rcs/_bashrc; source ~/.rcs/_bashrc; resource"
+alias relocal="vim ~/.profile; source ~/.profile"
 
 alias rerc="cd ~/.rcs; gpl; source ~/.rcs/_bashrc; resource"
 
