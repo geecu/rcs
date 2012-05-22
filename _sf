@@ -4,3 +4,4 @@ alias sfschema_rebuildno_data="php app/console --env=$SF_ENV doctrine:schema:dro
 alias sfdata_load="php app/console --env=$SF_ENV doctrine:fixtures:load"
 alias sfmongo_rebuild="./app/console --env=$SF_ENV doctrine:mongodb:schema:drop; ./app/console --env=$SF_ENV doctrine:mongodb:schema:create; ./app/console --env=$SF_ENV doctrine:mongodb:fixtures:load"
 alias sfcc="php app/console --env=$SF_ENV cache:clear"
+alias sffix_permissions="sudo chmod -R +a \"_www allow delete,write,append,file_inherit,directory_inherit\" app/cache app/logs; sudo chmod -R +a \"`whoami` allow delete,write,append,file_inherit,directory_inherit\" app/cache app/logs"
