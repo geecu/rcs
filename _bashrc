@@ -31,6 +31,9 @@ alias gcm="git checkout master"
 alias gr="git remote -v"
 alias gt="git tag"
 
+alias c="composer.phar"
+alias cinstall="curl -s https://getcomposer.org/installer | php; sudo mv composer.phar /usr/bin"
+
 function wgrep() {
     find ./ -iregex .+\.php$ -type f -print | xargs grep "$@" ;
 }
