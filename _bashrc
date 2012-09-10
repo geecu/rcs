@@ -74,7 +74,9 @@ alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)
 
 function wchmod {
     #taken from https://gist.github.com/1560845
-    export WWEB_USER=$(ps axho user,comm|grep -E "httpd|apache"|uniq|grep -v "root"|awk 'END {print $1}')
+    if [ -z "${WWEB_USER}" ]; then
+        export WWEB_USER=$(ps axho user,comm|grep -E "httpd|apache"|uniq|grep -v "root"|awk 'END {print $1}')
+    fi
 
     if which setfacl
     then
