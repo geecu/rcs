@@ -71,10 +71,19 @@ complete -F _wweb_completion wweb
 #thanks to http://www.earthinfo.org/linux-disk-usage-sorted-by-size-and-human-readable/
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\' 
 
-export WWEB_USER="_www"
 function wchmod {
-    echo doing a chmod +a $WWEB_USER and `whoami` on $@
-    sudo chmod -R +a "$WWEB_USER allow delete,write,append,file_inherit,directory_inherit" $@
-    sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" $@
+    #taken from https://gist.github.com/1560845
+    export WWEB_USER=$(ps axho user,comm|grep -E "httpd|apache"|uniq|grep -v "root"|awk 'END {print $1}')
+
+    if which setfacl
+    then
+        echo setfacl $WWEB_USER and `whoami` on $@
+        sudo setfacl -R -m u:$WWEB_USER:rwx -m u:`whoami`:rwx $@
+        sudo setfacl -dR -m u:$WWEB_USER:rwx -m u:`whoami`:rwx $@
+    else
+        echo doing a chmod +a $WWEB_USER and `whoami` on $@
+        sudo chmod -R +a "$WWEB_USER allow delete,write,append,file_inherit,directory_inherit" $@
+        sudo chmod -R +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" $@
+    fi
 }
 
