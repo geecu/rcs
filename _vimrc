@@ -84,3 +84,6 @@ else
   set directory=/tmp
 end
 
+let mapleader = ','
+nnoremap <leader>[ :bp<CR>
+nnoremap <leader>] :bn<CR>
