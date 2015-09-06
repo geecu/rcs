@@ -3,7 +3,7 @@ plugins=(git)
 export ZSH=/root/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 DISABLE_AUTO_UPDATE="true"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 source $ZSH/oh-my-zsh.sh
 
 alias reprofile="vi ~/.zshrc; exec zsh"
