@@ -8,7 +8,7 @@ cp ~/_rcs/_sample_bashrc ~/_bashrc
 cp ~/_rcs/_sample_vimrc ~/_vimrc
 
 # fresh debian
-apt-get install git vim zsh
+apt-get install git vim zsh curl
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone http://github.com/geecu/rcs.git ~/.rcs
 cp ~/.rcs/_sample_zshrc ~/.zshrc
