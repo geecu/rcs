@@ -87,3 +87,9 @@ end
 let mapleader = ','
 nnoremap <leader>[ :bp<CR>
 nnoremap <leader>] :bn<CR>
+
+augroup filetype
+    autocmd BufNewFile,BufRead .make-config set filetype=make
+augroup END
+
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
